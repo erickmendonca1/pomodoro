@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Meu CSS-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Meu ícone-->
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+    <title>Meu Pomodoro</title>
+
+
+</head>
+
+<body class="bg-dark">
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand font-weight-bold text-white" href="#index.html">Timer Pomodoro</a>
+
+        <div class="ml-auto">
+            <a>
+                <i class="fa fa-pause text-white" style="font-size: 25pt;" aria-hidden="true"></i>
+
+            </a>
+            <a>
+                <i class="fa fa-play text-white" style="font-size: 25pt;" aria-hidden="true"></i>
+
+            </a>
+
+            <audio src="./audio/lo-fi.mp3" type="audio/mpeg"></audio>
+
+        </div>
+
+    </nav>
+    <!--/Meu ícone-->
+
+    <!--Container-->
+    <div class="container"></div>
+
+    <div class="row d-flex justify-content-center mt-5 mb-5">
+        <div class="col-md-8">
+
+            <!--Config-->
+
+            <div id="config" class="row d-flex justify-content-center">
+
+                <div class="col">
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class= "d-flex justify-content-center text-white font-weight-bold" for="acao">Ação</label>
+                                <input type="number" class="form-control form-control-lg bg-dark border-0 shadow text-white" id="acao">
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class= "d-flex justify-content-center text-white font-weight-bold"  for="pausa">Pausa</label>
+                                <input type="number" class="form-control" id="pausa">
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class= "d-flex justify-content-center text-white font-weight-bold"  for="sessoes">Sessões</label>
+                                <input type="number" class="form-control" id="sessoes">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--/Config-->
+
+        </div>
+
+
+    </div>
+
+    <!--/Container-->
+
+
+    <script src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
