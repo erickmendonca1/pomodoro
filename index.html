@@ -30,11 +30,11 @@
         <a class="navbar-brand font-weight-bold text-white" href="#index.html">Timer Pomodoro</a>
 
         <div class="ml-auto">
-            <a>
+            <a onclick="pausar()">
                 <i id="pause" class="fa fa-pause text-white" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
 
             </a>
-            <a>
+            <a onclick="executar()">
                 <i id="play" class="fa fa-play text-white" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
 
             </a>
@@ -64,8 +64,7 @@
                             <div class="form-group">
                                 <label class="d-flex justify-content-center text-white font-weight-bold"
                                     for="acao">Ação</label>
-                                <input type="number"
-                                    class="form-control form-control-lg bg-dark border-0 shadow text-white" id="acao">
+                                <input type="number" class="form-control form-control-lg bg-dark border-0 shadow text-white" id="acao">
                                     <small class = "text-danger" id="erro_acao"></small>
 
                             </div>
@@ -120,7 +119,7 @@
         <!--/Config-->
 
         <!--Timer-->
-        <div id="timer" class="mt-0 d-flex justify-content-center" style="display: none;">
+        <div id="timer" class="mt-0 d-flex justify-content-center">
             <div class="row mb-3">
 
                 <div class="col">
@@ -143,7 +142,7 @@
 
             </div>
                  <!--/Relogio-->   
-            <div class="row mb-3">
+            <div class="row mt-5">
                 <div class="col">
                     <h3 id='title_sessao' class="text-center text-secondary"></h3>
                 </div>
@@ -158,16 +157,16 @@
 
         <!--/Timer-->
 
-        <!--Finalização-->
-        <div id="fim" style="display: none;">
-            <h1 class="text-success text-center">Parabéns! Você finalizou suas tarefas.</h1>
-            <div class="row mt-5 mb-5 d-flex justify-content-center">
-               <div class="col-md-9 d-flex justify-content-center">
-                  <a href="./index.html" class="btn btn-danger shadow btn-lg">Inicio</a>
-               </div>
-            </div>
-         </div>
-        <!--/Finalização-->
+        <!-- Finalização -->
+      <div id="fim" style="display: none;">
+        <h1 class="text-success text-center">Parabéns! Você finalizou suas tarefas.</h1>
+        <div class="row mt-5 mb-5 d-flex justify-content-center">
+           <div class="col-md-9 d-flex justify-content-center">
+              <a href="./index.html" class="btn btn-danger shadow btn-lg">Inicio</a>
+           </div>
+        </div>
+     </div>
+     <!-- /Finalização -->
         
     </div>
 
